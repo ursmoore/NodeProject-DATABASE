@@ -14,10 +14,38 @@ module.exports = {
     await queryInterface.bulkInsert("todoItems", [
       {
         task: "cleaning",
-        deadline: "oktober",
         important: true,
         createdAt: new Date(),
         updatedAt: new Date(),
+        todoListsId: 1,
+      },
+      {
+        task: "shower",
+        important: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        todoListsId: 2,
+      },
+      {
+        task: "bike",
+        important: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        todoListsId: 1,
+      },
+      {
+        task: "vacation",
+        important: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        todoListsId: 3,
+      },
+      {
+        task: "holiday",
+        important: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        todoListsId: 2,
       },
     ]);
   },

@@ -16,6 +16,25 @@ module.exports = {
         name: "dishes",
         createdAt: new Date(),
         updatedAt: new Date(),
+        userId: 1,
+      },
+      {
+        name: "coding",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        userId: 3,
+      },
+      {
+        name: "toilet",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        userId: 2,
+      },
+      {
+        name: "paperwork",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        userId: 2,
       },
     ]);
   },

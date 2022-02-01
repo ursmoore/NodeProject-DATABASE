@@ -10,12 +10,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      todoItem.belongsTo(models.todoList, { foreignKey: "todoListsId" });
     }
   }
   todoItem.init(
     {
       task: DataTypes.STRING,
-      deadline: DataTypes.STRING,
       important: DataTypes.BOOLEAN,
     },
     {
