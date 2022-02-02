@@ -9,14 +9,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      todoList.belongsTo(models.user);
+      todoList.belongsTo(models.user, { foreignKey: "ownerId" });
       todoList.hasMany(models.todoItem, { foreignKey: "todoListsId" });
     }
   }
   todoList.init(
     {
       name: DataTypes.STRING,
-      userId: DataTypes.INTEGER,
     },
     {
       sequelize,
